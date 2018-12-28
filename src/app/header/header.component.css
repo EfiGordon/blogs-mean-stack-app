@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.activeClass {
+  color: yellow;
+}
+
+ul {
+  display: flex;
+}
