@@ -27,7 +27,9 @@
       type="submit"
       mat-raised-button
       [disabled]="loginForm.invalid"
-      color="accent">Login</button>
+      color="accent"
+      *ngIf="!isLoading">Login</button>
+
   </form>
 
 </mat-card>

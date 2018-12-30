@@ -27,7 +27,8 @@
       type="submit"
       mat-raised-button
       [disabled]="signupForm.invalid"
-      color="accent">Signup</button>
+      color="accent"
+      *ngIf="!isLoading">Signup</button>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
   </form>
-
 </mat-card>
