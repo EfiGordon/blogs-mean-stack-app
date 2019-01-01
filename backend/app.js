@@ -6,7 +6,7 @@ const postsRoutes = require('./routes/posts');
 const userRoutes = require('./routes/user');
 const app = express();
 
-mongoose.connect("mongodb+srv://efigordon90:a41EKKzjHJGyJJB9@cluster0-sb1dy.mongodb.net/node-angular-db?retryWrites=true",
+mongoose.connect("mongodb+srv://efigordon90:" + process.env.MONGO_ATLAS_PASSWORD + ".mongodb.net/node-angular-db?retryWrites=true",
   {
     useNewUrlParser: true
   })
